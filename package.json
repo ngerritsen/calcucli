@@ -1,0 +1,47 @@
+{
+  "name": "calcucli",
+  "version": "1.0.0",
+  "description": "Calculator REPL running on calculy.",
+  "main": "src/index.js",
+  "bin": {
+    "calculy": "src/index.js",
+    "calc": "src/index.js"
+  },
+  "dependencies": {
+    "calculy": "^1.0.3",
+    "husky": "^4.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "^2.1.2"
+  },
+  "scripts": {
+    "test": "concurrently 'prettier --check .' 'eslint .'",
+    "fix": "concurrently 'prettier --write .' 'eslint . --fix'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngerritsen/calcucli.git"
+  },
+  "keywords": [
+    "calculator",
+    "cli",
+    "repl",
+    "calculy",
+    "algebra",
+    "math"
+  ],
+  "author": "Niels Gerritsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngerritsen/calcucli/issues"
+  },
+  "homepage": "https://github.com/ngerritsen/calcucli#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  }
+}
