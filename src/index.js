@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const calculy = require('calculy');
 const repl = require('repl');
 
