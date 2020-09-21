@@ -1,6 +1,6 @@
 {
   "name": "calcucli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Calculator REPL running on calculy.",
   "main": "src/index.js",
   "bin": {
@@ -8,7 +8,7 @@
     "calc": "src/index.js"
   },
   "dependencies": {
-    "calculy": "^1.0.3"
+    "calculy": "^3.1.1"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
