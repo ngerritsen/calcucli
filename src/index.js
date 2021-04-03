@@ -21,7 +21,7 @@ function evaluate(code, _, __, callback) {
 }
 
 function handleResult(code, callback) {
-  const result = calculy.evaluate(code, { constants: { ans } });
+  const result = calculy.calculate(code, { constants: { ans } });
 
   ans = result;
 
