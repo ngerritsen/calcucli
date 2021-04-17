@@ -2,11 +2,17 @@
 
 const calculy = require('calculy');
 const repl = require('repl');
+const { version } = require('../package.json');
 
 const RED = '\x1b[31m';
 const DEFAULT = '\x1b[0m';
 
 let ans = 0;
+
+if (process.argv.includes('-v')) {
+  console.log(version);
+  process.exit(0);
+}
 
 repl.start({
   eval: evaluate,

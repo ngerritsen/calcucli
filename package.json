@@ -1,6 +1,6 @@
 {
   "name": "calcucli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Calculator REPL running on calculy.",
   "main": "src/index.js",
   "bin": {
